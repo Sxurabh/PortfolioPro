@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-![Portfolio Website](./githubprofile.gif)
+![Portfolio Website](docs/assets/image/githubprofile.gif)
 
 Welcome to my portfolio website GitHub repository. This repository contains the source code for my personal portfolio website.
 
