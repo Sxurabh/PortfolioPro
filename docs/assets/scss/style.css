@@ -435,7 +435,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   background-color: #6610f2;
   color: #fff;
-  padding: 3px 14px;
+  padding: 0px 10px;
   max-width: 213px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,8 +450,9 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
           justify-content: center;
   border-radius: 5px;
   border: none;
-  margin-top: 30px;
-  font-size: 16px;
+  margin: 30px 15px 0px 0px;
+
+  font-size: 14px;
   font-weight: 500;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
 }
@@ -1297,6 +1298,9 @@ main #skills .larguraMaxContainer > div #texto-skills p {
     }
   }
 }*/
+.buttons{
+  display: flex;
+}
 .scrollTop {
   position: fixed;
   right: 20px;
