@@ -124,15 +124,15 @@ document.querySelector(".tailwind").addEventListener("mouseover", function () {
     "Tailwind CSS is a framework designed to maximize the potential of good old CSS and take it even further. <br><br>";
 });
 
-document.querySelector(".sass").addEventListener("mouseover", function () {
+document.querySelector(".react").addEventListener("mouseover", function () {
   texto1.innerHTML =
   texto1.innerHTML =
     "React is an open source JavaScript library focused on creating user interfaces on web pages. <br><br> ";
 });
 
-document.querySelector(".next").addEventListener("mouseover", function () {
+document.querySelector(".bootstrap").addEventListener("mouseover", function () {
   texto1.innerHTML =
-    "Next.js is a web framework that enables functionality such as server-side rendering and static web site generation based on React. <br><br> ";
+    "Bootstrap is a UI libraby for CSS. <br><br> ";
 });
 
 document

@@ -525,21 +525,21 @@ main #apresentacaoPortfolio .mouse {
           transform: translate(-50%, 0%);
 }
 
-main #sobre {
+main #about {
   background-color: #202020;
 }
 
-main #sobre .larguraMaxContainer {
+main #about .larguraMaxContainer {
   padding: 100px 50px;
 }
 
 @media screen and (max-width: 1024px) {
-  main #sobre .larguraMaxContainer {
+  main #about .larguraMaxContainer {
     padding: 50px 20px;
   }
 }
 
-main #sobre .larguraMaxContainer #sobreMim {
+main #about .larguraMaxContainer #aboutMim {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,7 +551,7 @@ main #sobre .larguraMaxContainer #sobreMim {
           justify-content: space-between;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto {
+main #about .larguraMaxContainer #aboutFoto {
   width: 50%;
   padding-right: 30px;
   display: -webkit-box;
@@ -568,12 +568,12 @@ main #sobre .larguraMaxContainer #sobreFoto {
   transition: 1s all ease;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto:hover {
+main #about .larguraMaxContainer #aboutFoto:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-main #sobre .larguraMaxContainer #sobreFoto div {
+main #about .larguraMaxContainer #aboutFoto div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,11 +585,11 @@ main #sobre .larguraMaxContainer #sobreFoto div {
           justify-content: center;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto div .iconify {
+main #about .larguraMaxContainer #aboutFoto div .iconify {
   font-size: 48px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura1 {
+main #about .larguraMaxContainer #aboutFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
@@ -599,7 +599,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura2 {
+main #about .larguraMaxContainer #aboutFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
@@ -609,7 +609,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto #figura3 {
+main #about .larguraMaxContainer #aboutFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
@@ -619,17 +619,17 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   height: 75px;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon1 {
+main #about .larguraMaxContainer #aboutFoto .icon1 {
   -webkit-animation: icon-move 3s ease 2.9s infinite alternate;
           animation: icon-move 3s ease 2.9s infinite alternate;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon2 {
+main #about .larguraMaxContainer #aboutFoto .icon2 {
   -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
           animation: icon-move 3s ease 1.9s infinite alternate;
 }
 
-main #sobre .larguraMaxContainer #sobreFoto .icon3 {
+main #about .larguraMaxContainer #aboutFoto .icon3 {
   -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
           animation: icon-move 3s ease 0.6s infinite alternate;
 }
@@ -656,23 +656,23 @@ main #sobre .larguraMaxContainer #sobreFoto .icon3 {
   }
 }
 
-main #sobre .larguraMaxContainer #sobreFoto img {
+main #about .larguraMaxContainer #aboutFoto img {
   width: 100%;
   max-width: 400px;
 }
 
 @media screen and (max-width: 1100px) {
-  main #sobre .larguraMaxContainer #sobreFoto {
+  main #about .larguraMaxContainer #aboutFoto {
     display: none;
   }
 }
 
-main #sobre .larguraMaxContainer #sobreTexto {
+main #about .larguraMaxContainer #aboutTexto {
   width: 50%;
 }
 
 @media screen and (max-width: 1100px) {
-  main #sobre .larguraMaxContainer #sobreTexto {
+  main #about .larguraMaxContainer #aboutTexto {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,23 +688,23 @@ main #sobre .larguraMaxContainer #sobreTexto {
   }
 }
 
-main #sobre .larguraMaxContainer #sobreTexto h2 {
+main #about .larguraMaxContainer #aboutTexto h2 {
   padding-bottom: 20px;
   color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto p {
+main #about .larguraMaxContainer #aboutTexto p {
   line-height: 30px;
   color: #f9f9f9;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto p:nth-child(2) {
+main #about .larguraMaxContainer #aboutTexto p:nth-child(2) {
   padding-bottom: 20px;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto div {
+main #about .larguraMaxContainer #aboutTexto div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +712,7 @@ main #sobre .larguraMaxContainer #sobreTexto div {
       flex-wrap: wrap;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto div a {
+main #about .larguraMaxContainer #aboutTexto div a {
   background-color: #6610f2;
   color: #fff;
   padding: 15px 25px;
@@ -737,45 +737,45 @@ main #sobre .larguraMaxContainer #sobreTexto div a {
   width: 200px;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto div a:hover {
+main #about .larguraMaxContainer #aboutTexto div a:hover {
   cursor: pointer;
   background-color: #5429cf;
 }
 
-main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
+main #about .larguraMaxContainer #aboutTexto div a:nth-child(1) {
   margin-right: 20px;
 }
 
 @media screen and (max-width: 480px) {
-  main #sobre .larguraMaxContainer #sobreTexto div a {
+  main #about .larguraMaxContainer #aboutTexto div a {
     width: 100%;
     max-width: 100%;
   }
-  main #sobre .larguraMaxContainer #sobreTexto div a:nth-child(1) {
+  main #about .larguraMaxContainer #aboutTexto div a:nth-child(1) {
     margin-right: 0px;
   }
 }
 
-main #projetos {
+main #projects {
   padding: 100px 50px;
   text-align: center;
   background-color: #181818;
 }
 
 @media screen and (max-width: 1024px) {
-  main #projetos {
+  main #projects {
     padding: 50px 20px;
   }
 }
 
-main #projetos .larguraMaxContainer h2 {
+main #projects .larguraMaxContainer h2 {
   padding-bottom: 20px;
   color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
 
-main #projetos .larguraMaxContainer article {
+main #projects .larguraMaxContainer article {
   margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,7 +788,7 @@ main #projetos .larguraMaxContainer article {
   text-align: left;
 }
 
-main #projetos .larguraMaxContainer article > div {
+main #projects .larguraMaxContainer article > div {
   height: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -805,42 +805,42 @@ main #projetos .larguraMaxContainer article > div {
   border: 3px solid #202020;
 }
 
-main #projetos .larguraMaxContainer article > div:hover {
+main #projects .larguraMaxContainer article > div:hover {
   border: 3px solid #ffa6a6;
 }
 
 @media screen and (max-width: 1124px) {
-  main #projetos .larguraMaxContainer article > div {
+  main #projects .larguraMaxContainer article > div {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #projetos .larguraMaxContainer article > div {
+  main #projects .larguraMaxContainer article > div {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #projetos .larguraMaxContainer article > div img {
+main #projects .larguraMaxContainer article > div img {
   margin: 20px 0;
   border-radius: 5px;
 }
 
-main #projetos .larguraMaxContainer article > div h3 {
+main #projects .larguraMaxContainer article > div h3 {
   font-size: 1.2rem;
   color: #fefbfb;
 }
 
-main #projetos .larguraMaxContainer article > div p {
+main #projects .larguraMaxContainer article > div p {
   line-height: 28px;
   margin-bottom: 20px;
   font-size: 1rem;
   color: #f9f9f9;
 }
 
-main #projetos .larguraMaxContainer article > div > span {
+main #projects .larguraMaxContainer article > div > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,17 +855,17 @@ main #projetos .larguraMaxContainer article > div > span {
   width: 100%;
 }
 
-main #projetos .larguraMaxContainer article > div > span a {
+main #projects .larguraMaxContainer article > div > span a {
   width: 50%;
 }
 
 @media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer article > div > span a {
+  main #projects .larguraMaxContainer article > div > span a {
     width: 100%;
   }
 }
 
-main #projetos .larguraMaxContainer article > div > span button {
+main #projects .larguraMaxContainer article > div > span button {
   background-color: #6610f2;
   padding: 10px 25px;
   color: #fefbfb;
@@ -883,7 +883,7 @@ main #projetos .larguraMaxContainer article > div > span button {
 }
 
 @media screen and (max-width: 1024px) {
-  main #projetos .larguraMaxContainer article > div > span button {
+  main #projects .larguraMaxContainer article > div > span button {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -891,12 +891,12 @@ main #projetos .larguraMaxContainer article > div > span button {
   }
 }
 
-main #projetos .larguraMaxContainer article > div > span button:hover {
+main #projects .larguraMaxContainer article > div > span button:hover {
   cursor: pointer;
   background-color: #5429cf;
 }
 
-main #projetos .larguraMaxContainer article > div > span button .iconify {
+main #projects .larguraMaxContainer article > div > span button .iconify {
   font-size: 70px;
 }
 #downloadButton{
@@ -905,7 +905,7 @@ main #projetos .larguraMaxContainer article > div > span button .iconify {
   padding-right: 20px;
 }
 
-main #projetos .larguraMaxContainer article > div .linguagensProjeto {
+main #projects .larguraMaxContainer article > div .linguagensProjeto {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,7 +922,7 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto {
   height: auto;
 }
 
-main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
+main #projects .larguraMaxContainer article > div .linguagensProjeto span {
   padding: 5px;
   background-color: #181818;
   border-radius: 5px;
@@ -930,31 +930,31 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
   margin-bottom: 5px;
 }
 
-main #projetos .larguraMaxContainer a {
+main #projects .larguraMaxContainer a {
   color: #ffa6a6;
   font-size: 18px;
 }
 
-main #servicos {
+main #services {
   padding: 100px 50px;
   text-align: center;
   background-color: #202020;
 }
 
 @media screen and (max-width: 1024px) {
-  main #servicos {
+  main #services {
     padding: 50px 20px;
   }
 }
 
-main #servicos .larguraMaxContainer h2 {
+main #services .larguraMaxContainer h2 {
   padding-bottom: 20px;
   color: #fefbfb;
   font-size: 32px;
   font-weight: 500;
 }
 
-main #servicos .larguraMaxContainer article {
+main #services .larguraMaxContainer article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,7 +964,7 @@ main #servicos .larguraMaxContainer article {
   margin: 25px 0px;
 }
 
-main #servicos .larguraMaxContainer article div {
+main #services .larguraMaxContainer article div {
   text-align: center;
   height: auto;
   background-color: #181818;
@@ -981,54 +981,54 @@ main #servicos .larguraMaxContainer article div {
   border: 3px solid #202020;
 }
 
-main #servicos .larguraMaxContainer article div:hover {
+main #services .larguraMaxContainer article div:hover {
   border: 3px solid #6610f2;
 }
 
 @media screen and (max-width: 1124px) {
-  main #servicos .larguraMaxContainer article div {
+  main #services .larguraMaxContainer article div {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #servicos .larguraMaxContainer article div {
+  main #services .larguraMaxContainer article div {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
   }
 }
 
-main #servicos .larguraMaxContainer article div .iconify {
+main #services .larguraMaxContainer article div .iconify {
   color: #6610f2;
   font-size: 50px;
   margin: 10px 0px;
 }
 
-main #servicos .larguraMaxContainer article div h3 {
+main #services .larguraMaxContainer article div h3 {
   font-size: 1.2rem;
   padding: 20px 0px;
   color: #fefbfb;
 }
 
-main #servicos .larguraMaxContainer article div p {
+main #services .larguraMaxContainer article div p {
   line-height: 28px;
   font-size: 1rem;
   color: #f9f9f9;
 }
 
-main #conhecimentos {
+main #skills {
   padding: 100px 50px;
   background-color: #181818;
 }
 
 @media screen and (max-width: 1024px) {
-  main #conhecimentos {
+  main #skills {
     padding: 50px 20px 100px 20px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div {
+main #skills .larguraMaxContainer > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,17 +1040,17 @@ main #conhecimentos .larguraMaxContainer > div {
       flex-wrap: wrap;
 }
 
-main #conhecimentos .larguraMaxContainer > div article {
+main #skills .larguraMaxContainer > div article {
   width: 50%;
 }
 
 @media screen and (max-width: 1124px) {
-  main #conhecimentos .larguraMaxContainer > div article {
+  main #skills .larguraMaxContainer > div article {
     width: 100%;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
+main #skills .larguraMaxContainer > div #cards-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,18 +1059,18 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos {
   gap: 20px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .cards-nomes,
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .cards-nomes-baixo {
+main #skills .larguraMaxContainer > div #cards-skills div:hover .cards-nomes,
+main #skills .larguraMaxContainer > div #cards-skills div:hover .cards-nomes-baixo {
   display: block;
   text-align: center;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
+main #skills .larguraMaxContainer > div #cards-skills div:hover {
   border-bottom: 6px solid #6610f2;
   cursor: pointer;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
+main #skills .larguraMaxContainer > div #cards-skills div {
   width: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1091,13 +1091,13 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
 }
 
 @media screen and (max-width: 768px) {
-  main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
+  main #skills .larguraMaxContainer > div #cards-skills div {
     width: 40%;
     margin: 20px 0px;
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes {
+main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -1121,7 +1121,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   display: none;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes-baixo {
+main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes-baixo {
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -1145,26 +1145,26 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-n
   display: none;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .aumento-hover {
+main #skills .larguraMaxContainer > div #cards-skills div .aumento-hover {
   bottom: -75px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .iconify {
+main #skills .larguraMaxContainer > div #cards-skills div .iconify {
   font-size: 68px;
   color: #6610f2;
 }
 
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos {
+main #skills .larguraMaxContainer > div #texto-skills {
   height: 300px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
+main #skills .larguraMaxContainer > div #texto-skills h2 {
   margin-bottom: 30px;
   color: #fefbfb;
   font-size: 32px;
 }
 
-main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
+main #skills .larguraMaxContainer > div #texto-skills p {
   max-width: 500px;
   line-height: 32px;
   color: #f9f9f9;
