@@ -1,4 +1,53 @@
-//Menu
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOMContentLoaded event fired.");
+
+  // Your existing code for the dark mode toggle
+  const themeToggleButton = document.getElementById("theme-toggle-button");
+  const toggleInput = document.getElementById("toggle");
+
+  // Retrieve user preference from localStorage
+  const storedThemePreference = localStorage.getItem("darkMode");
+
+  // Apply initial theme based on user preference
+  const isDarkModePreferred = storedThemePreference === "true";
+  applyTheme(isDarkModePreferred);
+  toggleInput.checked = isDarkModePreferred;
+
+  // Function to apply the selected theme
+  function applyTheme(isDarkMode) {
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+
+    // Call the function to change the image source based on the mode
+    changeImageSource(isDarkMode);
+  }
+
+  // Toggle theme on button click
+  themeToggleButton.addEventListener("click", () => {
+    const isDarkMode = toggleInput.checked;
+    applyTheme(isDarkMode);
+    console.log('dark-mode');
+
+    // Store user preference in localStorage
+    localStorage.setItem("darkMode", isDarkMode.toString());
+  });
+
+  // Function to change the image source based on the mode
+  function changeImageSource(isDarkMode) {
+    const imageElement = document.getElementById("mouse");
+    imageElement.src = isDarkMode ? "assets/image/scroll-light.svg" : "assets/image/scroll-dark.svg";
+    // You can also change alt text, etc. if needed
+  }
+});
+
+
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -57,6 +106,7 @@ typeWrite(titulo);
 
 //Scroll TOP
 $(document).ready(function () {
+  
   var scrollTop = $(".scrollTop");
 
   $(window).scroll(function () {
@@ -150,34 +200,4 @@ for (i = 0; i < sairCaixa.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleButton = document.getElementById("theme-toggle-button");
-  const toggleInput = document.getElementById("toggle");
 
-  // Retrieve user preference from localStorage
-  const storedThemePreference = localStorage.getItem("darkMode");
-
-  // Apply initial theme based on user preference
-  const isDarkModePreferred = storedThemePreference === "true";
-  applyTheme(isDarkModePreferred);
-  toggleInput.checked = isDarkModePreferred;
-
-  // Toggle theme on button click
-  themeToggleButton.addEventListener("click", () => {
-    const isDarkMode = toggleInput.checked;
-    applyTheme(isDarkMode);
-
-    // Store user preference in localStorage
-    localStorage.setItem("darkMode", isDarkMode);
-  });
-
-  function applyTheme(isDarkMode) {
-    if (isDarkMode) {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
-    } else {
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
-    }
-  }
-});

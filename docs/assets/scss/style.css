@@ -250,8 +250,8 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #202020;
+  header {
+  background-color: #ebecf0;
 }
 
 header .larguraMaxContainer nav {
@@ -277,7 +277,7 @@ header .larguraMaxContainer nav {
 header .larguraMaxContainer nav .logo {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fefbfb;
+  color: black;
 }
 
 header .larguraMaxContainer nav .nav-list {
@@ -292,7 +292,7 @@ header .larguraMaxContainer nav .nav-list li {
 }
 
 header .larguraMaxContainer nav .nav-list li a {
-  color: #f9f9f9;
+  color: black;
   font-size: 1.1rem;
   position: relative;
 }
@@ -323,8 +323,7 @@ header .larguraMaxContainer nav .nav-list li a:hover::after {
 }
 
 header .larguraMaxContainer nav .nav-list li a:hover {
-  color: #fefbfb;
-}
+color: black;}
 
 .mobile-menu {
   display: none;
@@ -449,7 +448,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 main #apresentacaoPortfolio {
-  background-color: #181818;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -499,7 +498,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
-  color: #fefbfb;
+  color: black;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -1377,6 +1376,11 @@ main #skills .larguraMaxContainer > div #texto-skills p {
 }*/
 .buttons{
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
 .scrollTop {
   position: fixed;

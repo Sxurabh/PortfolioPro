@@ -1,3 +1,24 @@
-.dark-mode{
-    background-color: brown;
-}
+
+  .dark-mode header {
+    background-color: #202020;
+  }
+  
+  .dark-mode header .larguraMaxContainer nav .logo, .dark-mode
+  header .larguraMaxContainer nav .nav-list li a {
+    color: #ebecf0;
+  }
+  
+  .dark-mode header .larguraMaxContainer nav .nav-list li a:hover {
+    color: #ebecf0;
+  }
+  
+  .dark-mode main #apresentacaoPortfolio {
+    background-color: #181818;
+  }
+  
+  .dark-mode  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2,
+  #mouse {
+    color: white;
+    stroke: #ebecf0;
+  }
+  
