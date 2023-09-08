@@ -1,3 +1,80 @@
+/* *Dark Mode toggle*
+ */
+
+ /* The switch - the box around the slider */
+ #theme-toggle-button {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+
+  width: 3em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
+
 /* cyrillic-ext */
 @font-face {
   font-family: "Fira Code";
@@ -173,8 +250,8 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #202020;
+  header {
+  background-color: #ebecf0;
 }
 
 header .larguraMaxContainer nav {
@@ -200,7 +277,7 @@ header .larguraMaxContainer nav {
 header .larguraMaxContainer nav .logo {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fefbfb;
+  color: black;
 }
 
 header .larguraMaxContainer nav .nav-list {
@@ -215,7 +292,7 @@ header .larguraMaxContainer nav .nav-list li {
 }
 
 header .larguraMaxContainer nav .nav-list li a {
-  color: #f9f9f9;
+  color: black;
   font-size: 1.1rem;
   position: relative;
 }
@@ -246,8 +323,7 @@ header .larguraMaxContainer nav .nav-list li a:hover::after {
 }
 
 header .larguraMaxContainer nav .nav-list li a:hover {
-  color: #fefbfb;
-}
+color: black;}
 
 .mobile-menu {
   display: none;
@@ -257,7 +333,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #fefbfb;
+  background-color: black;
   margin: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -265,8 +341,8 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 
 .nav-list.active {
   visibility: initial;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  /* -webkit-transition: 1s all ease;
+  transition: 1s all ease; */
 }
 
 @-webkit-keyframes navLinkFade {
@@ -320,7 +396,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
     width: 60vw;
     height: 100vh;
     z-index: 999;
-    background-color: #202020;
+    background-color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -372,7 +448,7 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 main #apresentacaoPortfolio {
-  background-color: #181818;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -422,7 +498,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto {
 }
 
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 {
-  color: #fefbfb;
+  color: black;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -435,7 +511,7 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2 #nome {
 main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
   background-color: #6610f2;
   color: #fff;
-  padding: 3px 14px;
+  padding: 0px 10px;
   max-width: 213px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,8 +526,9 @@ main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto a {
           justify-content: center;
   border-radius: 5px;
   border: none;
-  margin-top: 30px;
-  font-size: 16px;
+  margin: 30px 15px 0px 0px;
+
+  font-size: 14px;
   font-weight: 500;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
 }
@@ -526,7 +603,7 @@ main #apresentacaoPortfolio .mouse {
 }
 
 main #about {
-  background-color: #202020;
+  background-color: var(--light);
 }
 
 main #about .larguraMaxContainer {
@@ -593,7 +670,7 @@ main #about .larguraMaxContainer #aboutFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -603,7 +680,7 @@ main #about .larguraMaxContainer #aboutFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -613,7 +690,7 @@ main #about .larguraMaxContainer #aboutFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -690,14 +767,14 @@ main #about .larguraMaxContainer #aboutTexto {
 
 main #about .larguraMaxContainer #aboutTexto h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
 
 main #about .larguraMaxContainer #aboutTexto p {
   line-height: 30px;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #about .larguraMaxContainer #aboutTexto p:nth-child(2) {
@@ -759,7 +836,7 @@ main #about .larguraMaxContainer #aboutTexto div a:nth-child(1) {
 main #projects {
   padding: 100px 50px;
   text-align: center;
-  background-color: #181818;
+  background-color: var(--light2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -770,7 +847,7 @@ main #projects {
 
 main #projects .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
@@ -795,18 +872,18 @@ main #projects .larguraMaxContainer article > div {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #202020;
+  background-color: var(--light);
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
   position: relative;
   -webkit-transition: 0.8s all ease;
   transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 3px solid var(--light);
 }
 
 main #projects .larguraMaxContainer article > div:hover {
-  border: 3px solid #ffa6a6;
+  border: 3px solid #5429cf;
 }
 
 @media screen and (max-width: 1124px) {
@@ -830,14 +907,14 @@ main #projects .larguraMaxContainer article > div img {
 
 main #projects .larguraMaxContainer article > div h3 {
   font-size: 1.2rem;
-  color: #fefbfb;
+  color: var(--dark);
 }
 
 main #projects .larguraMaxContainer article > div p {
   line-height: 28px;
   margin-bottom: 20px;
   font-size: 1rem;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #projects .larguraMaxContainer article > div > span {
@@ -931,14 +1008,14 @@ main #projects .larguraMaxContainer article > div .linguagensProjeto span {
 }
 
 main #projects .larguraMaxContainer a {
-  color: #ffa6a6;
+  color: #5429cf;
   font-size: 18px;
 }
 
 main #services {
   padding: 100px 50px;
   text-align: center;
-  background-color: #202020;
+  background-color: var(--light);
 }
 
 @media screen and (max-width: 1024px) {
@@ -949,7 +1026,7 @@ main #services {
 
 main #services .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
@@ -967,7 +1044,7 @@ main #services .larguraMaxContainer article {
 main #services .larguraMaxContainer article div {
   text-align: center;
   height: auto;
-  background-color: #181818;
+  background-color: var(--light2);
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -978,7 +1055,7 @@ main #services .larguraMaxContainer article div {
           flex-grow: 1;
   -webkit-transition: 0.8s all ease;
   transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 3px solid var(--light2);
 }
 
 main #services .larguraMaxContainer article div:hover {
@@ -1008,18 +1085,18 @@ main #services .larguraMaxContainer article div .iconify {
 main #services .larguraMaxContainer article div h3 {
   font-size: 1.2rem;
   padding: 20px 0px;
-  color: #fefbfb;
+  color: var(--dark);
 }
 
 main #services .larguraMaxContainer article div p {
   line-height: 28px;
   font-size: 1rem;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #skills {
   padding: 100px 50px;
-  background-color: #181818;
+  background-color: var(--light2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1076,7 +1153,7 @@ main #skills .larguraMaxContainer > div #cards-skills div {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 150px;
-  background-color: #202020;
+  background-color: var(--light);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,7 +1180,7 @@ main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 5px;
   height: 30px;
   width: 125px;
@@ -1127,7 +1204,7 @@ main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes-baixo {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color :#5429cf;
   padding: 5px;
   height: auto;
   width: 125px;
@@ -1160,14 +1237,14 @@ main #skills .larguraMaxContainer > div #texto-skills {
 
 main #skills .larguraMaxContainer > div #texto-skills h2 {
   margin-bottom: 30px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
 }
 
 main #skills .larguraMaxContainer > div #texto-skills p {
   max-width: 500px;
   line-height: 32px;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 /*
@@ -1297,6 +1374,14 @@ main #skills .larguraMaxContainer > div #texto-skills p {
     }
   }
 }*/
+.buttons{
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
 .scrollTop {
   position: fixed;
   right: 20px;
@@ -1324,12 +1409,17 @@ main #skills .larguraMaxContainer > div #texto-skills p {
 footer {
   padding: 50px 10px;
   text-align: center;
-  background-color: #181818;
-  color: #fefbfb;
+  background-color: var(--light2);
+  color: var(--dark);
+}
+.dark-mode footer{
+  color: var(--light2);
+
+  background-color: var(--dark2);
 }
 
 footer span {
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 10px 20px;
   border-radius: 20px;
   color: #fefbfb;
@@ -1340,11 +1430,15 @@ footer span:hover {
 }
 
 footer p {
-  color: #fefbfb;
+  color: var(--dark2);
   opacity: 0.5;
   padding: 25px;
   font-size: 1.1rem;
   font-weight: 500;
+}
+.dark-mode footer p {
+  color: var(--light2);
+
 }
 
 footer p:nth-child(2) {
@@ -1377,7 +1471,7 @@ footer div {
 }
 
 footer div a {
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 15px 25px;
   margin: 10px;
   border-radius: 5px;
