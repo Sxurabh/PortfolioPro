@@ -1015,7 +1015,7 @@ main #projects .larguraMaxContainer a {
 main #services {
   padding: 100px 50px;
   text-align: center;
-  background-color: #202020;
+  background-color: var(--light);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1026,7 +1026,7 @@ main #services {
 
 main #services .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
@@ -1044,7 +1044,7 @@ main #services .larguraMaxContainer article {
 main #services .larguraMaxContainer article div {
   text-align: center;
   height: auto;
-  background-color: #181818;
+  background-color: var(--light2);
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -1055,7 +1055,7 @@ main #services .larguraMaxContainer article div {
           flex-grow: 1;
   -webkit-transition: 0.8s all ease;
   transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 3px solid var(--light2);
 }
 
 main #services .larguraMaxContainer article div:hover {
@@ -1085,18 +1085,18 @@ main #services .larguraMaxContainer article div .iconify {
 main #services .larguraMaxContainer article div h3 {
   font-size: 1.2rem;
   padding: 20px 0px;
-  color: #fefbfb;
+  color: var(--dark);
 }
 
 main #services .larguraMaxContainer article div p {
   line-height: 28px;
   font-size: 1rem;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #skills {
   padding: 100px 50px;
-  background-color: #181818;
+  background-color: var(--light2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1153,7 +1153,7 @@ main #skills .larguraMaxContainer > div #cards-skills div {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 150px;
-  background-color: #202020;
+  background-color: var(--light);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1180,7 +1180,7 @@ main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 5px;
   height: 30px;
   width: 125px;
@@ -1204,7 +1204,7 @@ main #skills .larguraMaxContainer > div #cards-skills div .cards-nomes-baixo {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  background-color: #202020;
+  background-color :#5429cf;
   padding: 5px;
   height: auto;
   width: 125px;
@@ -1237,14 +1237,14 @@ main #skills .larguraMaxContainer > div #texto-skills {
 
 main #skills .larguraMaxContainer > div #texto-skills h2 {
   margin-bottom: 30px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
 }
 
 main #skills .larguraMaxContainer > div #texto-skills p {
   max-width: 500px;
   line-height: 32px;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 /*
@@ -1409,12 +1409,17 @@ main #skills .larguraMaxContainer > div #texto-skills p {
 footer {
   padding: 50px 10px;
   text-align: center;
-  background-color: #181818;
-  color: #fefbfb;
+  background-color: var(--light2);
+  color: var(--dark);
+}
+.dark-mode footer{
+  color: var(--light2);
+
+  background-color: var(--dark2);
 }
 
 footer span {
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 10px 20px;
   border-radius: 20px;
   color: #fefbfb;
@@ -1425,11 +1430,15 @@ footer span:hover {
 }
 
 footer p {
-  color: #fefbfb;
+  color: var(--dark2);
   opacity: 0.5;
   padding: 25px;
   font-size: 1.1rem;
   font-weight: 500;
+}
+.dark-mode footer p {
+  color: var(--light2);
+
 }
 
 footer p:nth-child(2) {
@@ -1462,7 +1471,7 @@ footer div {
 }
 
 footer div a {
-  background-color: #202020;
+  background-color:#5429cf;
   padding: 15px 25px;
   margin: 10px;
   border-radius: 5px;
