@@ -1093,7 +1093,8 @@ main #services .larguraMaxContainer article div p {
   font-size: 1rem;
   color: var(--dark);
 }
-
+.dark-mode main #services .larguraMaxContainer article div p{
+  color: var(--light2);}
 main #skills {
   padding: 100px 50px;
   background-color: var(--light2);

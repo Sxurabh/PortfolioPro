@@ -73,9 +73,7 @@ background-color: var(--dark2);}
 color: var(--light2)};
 .dark-mode main #services .larguraMaxContainer article div p{
 color: var(--light2);}
-.dark-mode main #services .larguraMaxContainer article div p{
-  color: var(--light2);
-}
+
 .dark-mode main #skills {
 background-color: var(--dark2);}
 .dark-mode main #skills .larguraMaxContainer > div #texto-skills h2{
