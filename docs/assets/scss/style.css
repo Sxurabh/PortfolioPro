@@ -333,7 +333,7 @@ color: black;}
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #fefbfb;
+  background-color: black;
   margin: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -341,8 +341,8 @@ color: black;}
 
 .nav-list.active {
   visibility: initial;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  /* -webkit-transition: 1s all ease;
+  transition: 1s all ease; */
 }
 
 @-webkit-keyframes navLinkFade {
@@ -396,7 +396,7 @@ color: black;}
     width: 60vw;
     height: 100vh;
     z-index: 999;
-    background-color: #202020;
+    background-color: white;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -603,7 +603,7 @@ main #apresentacaoPortfolio .mouse {
 }
 
 main #about {
-  background-color: #202020;
+  background-color: var(--light);
 }
 
 main #about .larguraMaxContainer {
@@ -670,7 +670,7 @@ main #about .larguraMaxContainer #aboutFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -680,7 +680,7 @@ main #about .larguraMaxContainer #aboutFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -690,7 +690,7 @@ main #about .larguraMaxContainer #aboutFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #181818;
+  background-color: #5429cf;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -767,14 +767,14 @@ main #about .larguraMaxContainer #aboutTexto {
 
 main #about .larguraMaxContainer #aboutTexto h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
 
 main #about .larguraMaxContainer #aboutTexto p {
   line-height: 30px;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #about .larguraMaxContainer #aboutTexto p:nth-child(2) {
@@ -836,7 +836,7 @@ main #about .larguraMaxContainer #aboutTexto div a:nth-child(1) {
 main #projects {
   padding: 100px 50px;
   text-align: center;
-  background-color: #181818;
+  background-color: var(--light2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -847,7 +847,7 @@ main #projects {
 
 main #projects .larguraMaxContainer h2 {
   padding-bottom: 20px;
-  color: #fefbfb;
+  color: var(--dark);
   font-size: 32px;
   font-weight: 500;
 }
@@ -872,18 +872,18 @@ main #projects .larguraMaxContainer article > div {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #202020;
+  background-color: var(--light);
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
   position: relative;
   -webkit-transition: 0.8s all ease;
   transition: 0.8s all ease;
-  border: 3px solid #202020;
+  border: 3px solid var(--light);
 }
 
 main #projects .larguraMaxContainer article > div:hover {
-  border: 3px solid #ffa6a6;
+  border: 3px solid #5429cf;
 }
 
 @media screen and (max-width: 1124px) {
@@ -907,14 +907,14 @@ main #projects .larguraMaxContainer article > div img {
 
 main #projects .larguraMaxContainer article > div h3 {
   font-size: 1.2rem;
-  color: #fefbfb;
+  color: var(--dark);
 }
 
 main #projects .larguraMaxContainer article > div p {
   line-height: 28px;
   margin-bottom: 20px;
   font-size: 1rem;
-  color: #f9f9f9;
+  color: var(--dark);
 }
 
 main #projects .larguraMaxContainer article > div > span {
@@ -1008,7 +1008,7 @@ main #projects .larguraMaxContainer article > div .linguagensProjeto span {
 }
 
 main #projects .larguraMaxContainer a {
-  color: #ffa6a6;
+  color: #5429cf;
   font-size: 18px;
 }
 
