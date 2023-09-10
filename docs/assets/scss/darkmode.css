@@ -1,87 +1,110 @@
-:root{
+:root {
   --dark: #202020;
   --dark2: #181818;
   --light: #ebecf0;
   --light2: white;
-
 }
-  .dark-mode header {
-    background-color: var(--dark);
-  }
-  
-  .dark-mode header .larguraMaxContainer nav .logo, .dark-mode
-  header .larguraMaxContainer nav .nav-list li a {
-    color: var(--light)
-  }
-  
-  .dark-mode header .larguraMaxContainer nav .nav-list li a:hover {
-    color: var(--light)
-  }
-  
-  .dark-mode main #apresentacaoPortfolio {
-    background-color: var(--dark2)
-  }
-  
-  .dark-mode  main #apresentacaoPortfolio .larguraMaxContainer #apresentacaoTexto h2,
-  #mouse {
-    color: white;
-    stroke: var(--light)
-  }
-  .dark-mode .mobile-menu div {
-    background-color: var(--light2)
-  }
-  .dark-mode .nav-list{
-    background-color: var(--dark)
-  }
-  .dark-mode main #about{
-    background-color: var(--dark);
-  }
-.dark-mode main #about .larguraMaxContainer #aboutTexto h2  {
-color: var(--light);}
-.dark-mode main #about .larguraMaxContainer #aboutTexto p  {
-color: var(--light);}
-.dark-mode main #projects {
-background-color: var(--dark2);}
-.dark-mode main #projects .larguraMaxContainer h2 {
-color: var(--light2);}
-.dark-mode main #projects .larguraMaxContainer article > div {
-background-color: var(--dark);}
-.dark-mode main #projects .larguraMaxContainer article > div h3 {
-color: var(--light2);}
-.dark-mode main #projects .larguraMaxContainer article > div p {
-color: var(--light);}
-.dark-mode main #projects .larguraMaxContainer article > div {
-border-color: var(--dark);}
-.dark-mode main #projects .larguraMaxContainer article > div:hover {
-border-color: #ffa6a6;}
-.dark-mode main #projects .larguraMaxContainer a {
-color: #ffa6a6;}
-.dark-mode main #about .larguraMaxContainer #aboutFoto #figura1 {
-background-color: var(--dark2);}
-.dark-mode main #about .larguraMaxContainer #aboutFoto #figura2 {
-  background-color: var(--dark2);}
-  .dark-mode main #about .larguraMaxContainer #aboutFoto #figura3 {
-    background-color: var(--dark2);}
-    .dark-mode main #services {
-background-color: var(--dark);}
-.dark-mode main #services .larguraMaxContainer h2 {
-color: var(--light2);}
-.dark-mode main #services .larguraMaxContainer article div {
-  border: 3px solid var(--dark);
-background-color: var(--dark2);}
-.dark-mode main #services .larguraMaxContainer article div h3 {
-color: var(--light2)};
-.dark-mode main #services .larguraMaxContainer article div p{
-color: var(--light2);}
+.dark-mode header {
+  background-color: var(--dark);
+}
 
-.dark-mode main #skills {
-background-color: var(--dark2);}
-.dark-mode main #skills .larguraMaxContainer > div #texto-skills h2{
+.dark-mode header .larguraMaxContainer nav .logo,
+.dark-mode header .larguraMaxContainer nav .nav-list li a {
+  color: var(--light);
+}
+
+.dark-mode header .larguraMaxContainer nav .nav-list li a:hover {
+  color: var(--light);
+}
+
+.dark-mode main #apresentacaoPortfolio {
+  background-color: var(--dark2);
+}
+
+.dark-mode
+  main
+  #apresentacaoPortfolio
+  .larguraMaxContainer
+  #apresentacaoTexto
+  h2,
+#mouse {
+  color: white;
+  stroke: var(--light);
+}
+.dark-mode .mobile-menu div {
+  background-color: var(--light2);
+}
+.dark-mode .nav-list {
+  background-color: var(--dark);
+}
+.dark-mode main #about {
+  background-color: var(--dark);
+}
+.dark-mode main #about .larguraMaxContainer #aboutTexto h2 {
+  color: var(--light);
+}
+.dark-mode main #about .larguraMaxContainer #aboutTexto p {
+  color: var(--light);
+}
+.dark-mode main #projects {
+  background-color: var(--dark2);
+}
+.dark-mode main #projects .larguraMaxContainer h2 {
   color: var(--light2);
 }
-.dark-mode main #skills .larguraMaxContainer > div #texto-skills p{
+.dark-mode main #projects .larguraMaxContainer article > div {
+  background-color: var(--dark);
+}
+.dark-mode main #projects .larguraMaxContainer article > div h3 {
+  color: var(--light2);
+}
+.dark-mode main #projects .larguraMaxContainer article > div p {
+  color: var(--light);
+}
+.dark-mode main #projects .larguraMaxContainer article > div {
+  border-color: var(--dark);
+}
+.dark-mode main #projects .larguraMaxContainer article > div:hover {
+  border-color: #ffa6a6;
+}
+.dark-mode main #projects .larguraMaxContainer a {
+  color: #ffa6a6;
+}
+.dark-mode main #about .larguraMaxContainer #aboutFoto #figura1 {
+  background-color: var(--dark2);
+}
+.dark-mode main #about .larguraMaxContainer #aboutFoto #figura2 {
+  background-color: var(--dark2);
+}
+.dark-mode main #about .larguraMaxContainer #aboutFoto #figura3 {
+  background-color: var(--dark2);
+}
+.dark-mode main #services {
+  background-color: var(--dark);
+}
+.dark-mode main #services .larguraMaxContainer h2 {
+  color: var(--light2);
+}
+.dark-mode main #services .larguraMaxContainer article div {
+  border: 3px solid var(--dark);
+  background-color: var(--dark2);
+}
+.dark-mode main #services .larguraMaxContainer article div h3 {
+  color: var(--light2);
+}
+.dark-mode main #services .larguraMaxContainer article div p {
+  color: var(--light2);
+}
+
+.dark-mode main #skills {
+  background-color: var(--dark2);
+}
+.dark-mode main #skills .larguraMaxContainer > div #texto-skills h2 {
+  color: var(--light2);
+}
+.dark-mode main #skills .larguraMaxContainer > div #texto-skills p {
   color: var(--light2);
 }
 .dark-mode main #skills .larguraMaxContainer > div #cards-skills div {
-background-color: var(--dark)};
-
+  background-color: var(--dark);
+}
